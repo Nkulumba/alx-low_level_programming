@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *   * main - Prints some letters of alphabet
+ *   * main - Prints a hexadecimal string
  *     *
  *       * Return: Always (Success)
  *         */
@@ -9,16 +9,16 @@ int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
-	   {
-	      if (c != 'e' && c != 'q')
-		{
-		    putchar(c);  
-		}
-	   }
+	for (c = '0'; c <= '9'; c++)
+	     {
+		putchar(c);
+	     }
 
-		    putchar('\n');
+	for (c = 'a'; c <= 'f'; c++)
+	     {
+		putchar(c);
+	     }
 
-	return (0);
+	        putchar('\n');
+		return (0);
 }
-
