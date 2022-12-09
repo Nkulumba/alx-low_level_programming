@@ -1,20 +1,33 @@
 #include <stdio.h>
 
 /**
- *   * main - Prints the numbers since 0 to 9
+ *   * main - Prints combination of numbers
  *     *
  *       * Return: Always (Success)
  *         */
 int main(void)
 {
-		int n;
+      int c, i;
 
-			for (n = '0'; n <= '9'; n++)
-					{
-								putchar(n);
-									}
+	for (c = '0'; c <= '9'; c++)
+	     {
+	        for (i = '0'; i <= '9'; i++)
+		    {
+		      if (c < i)
+		        {
+																								putchar(c);
+			putchar(i);
 
-				putchar('\n');
+																						              if (c != '8' || (c == '8' && i != '9'))
+																								{
+																							           putchar(',');
+																							           putchar(' ');
+																																													}
+																								 }
+	            }
+	       }
 
-					return (0);
+			    putchar('\n');
+
+	return (0);
 }
