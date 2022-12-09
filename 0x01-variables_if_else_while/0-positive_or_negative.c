@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Prints if number is positive, zero or negative 
- * Return: Always 0
+ * main - main fuction to generate a random number
+ *
+ * Return: Always 0 (Success)
+ *
  */
 int main(void)
 {
