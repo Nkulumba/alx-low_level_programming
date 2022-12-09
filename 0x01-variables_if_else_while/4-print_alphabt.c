@@ -1,34 +1,22 @@
 #include <stdio.h>
 
 /**
- *   * main - Prints 3 combination of numbers
+ *   * main - Prints some letters of alphabet
  *     *
  *       * Return: Always (Success)
  *         */
 int main(void)
 {
-		int c, i, k;
+	char c;
+	for (c = 'a'; c <= 'z'; c++)
+	    {
+	       if (c != 'e' && c != 'q')
+		  {
+		         putchar(c);
+                  }
+	    }
 
-		for (c = '0'; c <= '9'; c++)
-		   {
-		       for (i = '0'; i <= '9'; i++)
-		          {
-			      for (k = '0'; k <= '9'; k++)
-				 {																					     if (c < i && i < k)
-																									       {
-																										 putchar(c);
-																						                                 putchar(i);
-						 																			         putchar(k);
-																									       }																				 if (c != '7')
-																									       {																					putchar(',');																																					                                putchar(' ');
-																									       }
-																																														   }
-																								   }
-		      }
+			 putchar('\n');
 
-
-				putchar('\n');
-
-					return (0);
+	return (0);
 }
-
