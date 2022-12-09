@@ -1,26 +1,20 @@
 #include <stdio.h>
 
 /**
- *  * main - Prints the alphabetic in lower and upper case
- *   *
- *    * Return: Always (Success)
- *     */
+ *   * main - Prints the alphabet at reverse
+ *     *
+ *       * Return: Always (Success)
+ *         */
 int main(void)
 {
-		char c;
+	char c;
 
-		for (c = 'a'; c <= 'z'; c++)
-		    {
-			putchar(c);
-		    }
+	    for (c = 'z'; c >= 'a'; c--)
+		{
+		     putchar(c);
+	        }
 
-		for (c = 'A'; c <= 'Z'; c++)
-		   {
-			putchar(c);
-		   }
+	             putchar('\n');
 
-			putchar('\n');
-
-		return (0);
+	return (0);
 }
-
