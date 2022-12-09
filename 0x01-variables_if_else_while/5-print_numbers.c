@@ -1,41 +1,20 @@
 #include <stdio.h>
 
 /**
- *   * main - Prints 3 combination of numbers
+ *   * main - Prints the numbers since 0 to 9
  *     *
  *       * Return: Always (Success)
  *         */
 int main(void)
 {
-		int c, i, k, j;
+	char n;
 
-		 for (c = 48; c <= 57; c++)
-		    {
-		      for (i = 48; i <= 57; i++)
-		         {
-			   for (k = 48; k <= 57; k++)
-			     {																						for (j = 48; j <= 57; j++)
-																									 {
-																									   if (((k + j) > (c + i) &&  k >= c) || c < k)
-																									      {
-																										putchar(c);																				putchar(i);																			        putchar(' ');
-				        putchar(k);
-				        putchar(j);
-																																																																			    if (c + i + k + j == 227 && c == 57)
-																						                               {
-																										break;
-																							                    else
-																							                        {
-																									          putchar(',');
-																									          putchar(' ');
-																																												                         }
-																										}
-																							                      }
-																							                   }
-			}
-	   }
+	 for (n = '0'; n <= '9'; n++)
+	      {
+		  putchar(n);
+	      }
 
-				putchar('\n');
+		   putchar('\n');
 
-					return (0);
+	return (0);
 }
