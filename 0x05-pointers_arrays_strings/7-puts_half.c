@@ -4,7 +4,7 @@
  *
  * @str: This is the input string.
  */
-void puts_half(char*str)
+void puts_half(char *str)
 {
 	int index, half;
 
