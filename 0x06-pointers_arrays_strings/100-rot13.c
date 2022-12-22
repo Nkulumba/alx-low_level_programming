@@ -1,18 +1,15 @@
 #include "main.h"
-
 /**
  * rot13 - encodes a string using rot13
- * @str: the string targeted
+ * @s: the string targeted
  * Return: returns the encoded string
  */
 char *rot13(char *s)
 {
 	int x, y;
 
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXY"
-		"Zabcdefghijklmnopqrstuvwxyz";
-	char output[] = "NOPQRSTUVWXYZABCDEFGH"
-		"IJKLMnopqrstuvwxyzabcdefghijklm";
+	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
