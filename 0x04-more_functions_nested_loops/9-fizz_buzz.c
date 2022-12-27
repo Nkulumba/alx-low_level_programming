@@ -30,7 +30,7 @@ if (i < p)
 printf("Buzz ");
 
 else
-printf("Buzz", i);
+printf("Buzz");
 }
 
 else
