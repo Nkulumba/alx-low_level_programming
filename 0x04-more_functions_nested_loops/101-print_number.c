@@ -1,35 +1,26 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 /**
- * print_number - prints a number
- * @n: Input number
+ * print_number - prints int with putchar
+ * @n: takes number, hello
+ *
+ * Return: void
  */
 
 void print_number(int n)
 {
-long len, res, i, temp, expo;
-res = n;
-expo = len =  1;
-/*Check negatives*/
-if (res < 0)
+unsigned int m;
+
+if (n < 0)
 {
-res *= -1;
 _putchar('-');
+m = -n;
 }
-/**/
-temp = res;
-while (temp >= 10)
+else
 {
-len++;
-temp /= 10;
+m = n;
 }
-/*Create Exponent*/
-for (i = 1; i < len; i++)
-expo *= 10;
-/*Main */
-while (expo > 1)
-{
-_putchar((res / expo) % 10 + '0');
-expo /= 10;
-}
-_putchar(res % 10 + '0');
+if (m / 10 != 0)
+print_number(m / 10);
+_putchar((m % 10) + '0');
 }
