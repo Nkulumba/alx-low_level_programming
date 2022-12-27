@@ -30,6 +30,11 @@ if (i < p)
 printf("Buzz ");
 
 else
+printf("Buzz", i);
+}
+
+else
+{
 printf("%i ", i);
 }
 
