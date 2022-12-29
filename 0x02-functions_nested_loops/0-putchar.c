@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main - print _putchar
+ * is written by bwave
+ * Return: 0
  */
 
 int main(void)
@@ -18,4 +19,3 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
-
