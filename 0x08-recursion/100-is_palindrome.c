@@ -14,6 +14,7 @@ int _length(char *s)
 /**
  * checkp - checks if the string is palindrome
  * @i: is te index@lg: is the length of the string
+ * @lg: is the index
  * @s: is the string
  * Return: 1 if is polindrome or 0 if not
  */
@@ -23,7 +24,7 @@ int checkp(int i, int lg, char *s)
 	{
 		if (s[i] == s[lg])
 		{
-			return (checkp(i + 1, lg -1, s));
+			return (checkp(i + 1, lg - 1, s));
 		}
 		else if (s[i] != s[lg])
 		{
