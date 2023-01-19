@@ -1,4 +1,4 @@
-nclude "variadic_functions.h"
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
 /**
@@ -11,7 +11,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	/* creating va_list to store the variable argument list */
 	va_list my_nums;
-
 	unsigned int count;
 
 	/* init valist for the number of arguments */
