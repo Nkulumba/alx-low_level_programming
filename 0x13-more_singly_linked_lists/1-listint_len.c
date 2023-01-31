@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 
 /**
  * listint_len - counts the number of nodes in a linked list
@@ -18,4 +18,3 @@ size_t listint_len(const listint_t *h)
 	}
 	return (count);
 }
-
